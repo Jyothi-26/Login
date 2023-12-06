@@ -17,40 +17,26 @@ const LoginForm = () => {
       window.alert('Login Successful! Redirecting...');
     }
     else{
-      window.alert("invalid");
+      window.alert("Invalid Credentials");
     }
     setTimeout(() => {
       window.location.href = 'https://meesho.com';
     }, 2000);
   };
   
-    
-
   return (
     <div className="container">
       <h1>Login </h1>
       <form>
         <label >Username:</label>
-        <input
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
+        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required/>
 
         <label >Password:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        /><br/><br/>
-        
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required/><br/><br/>
+
         <button onClick={()=>validateAll()}>Submit</button><br/><br/>
       </form>
       </div>
   );
 };
-
-
 export default LoginForm;

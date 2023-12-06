@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Register from './Register';
+import LoginForm from './LoginForm';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(< Register />)
+root.render(< LoginForm />)

@@ -37,44 +37,16 @@ const Register = () => {
       <h1>Registeration Form</h1>
       <form onSubmit={validateAll}>
         <label >Username:</label>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
+        <input type="text" id="username" name="username" value={username} onChange={(e) => setUsername(e.target.value)} required/>
 
         <label >Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+        <input type="email" id="email"name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
 
         <label >Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
+        <input type="password" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)}required/>
 
         <label >Confirm Password:</label>
-        <input
-          type="password"
-          id="confirmPassword"
-          name="confirmPassword"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          required
-        /><br></br><br></br>
+        <input type="password" id="confirmPassword" name="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}required/><br></br><br></br>
 
         <button type="submit">Submit</button><br></br><br></br>
       </form>
